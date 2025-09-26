@@ -162,7 +162,7 @@ void S2S(pair<int, int> pos, pair<int, int> dir) {
   int nx = pos.X + dir.X;
   int ny = pos.Y + dir.Y;
 
-  if (nx < 0 || nx >= N || ny < 0 || ny >= M) {
+  if (nx < 0 || nx >= N || ny < 0 || ny >= N) {
     board[pos.X][pos.Y] = 0;
     pos_S[idx_S] = {-1, -1};
     status[idx_S] = DEAD;
